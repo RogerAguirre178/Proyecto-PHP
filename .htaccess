@@ -1,4 +1,4 @@
 Options ALL -Indexes 
 RewriteEngine On
 
-RewriteRules ^([-a-zA-Z0-9/]+)$ index.php?rutas = 1
+RewriteRules ^([-a-zA-Z0-9/]+)$ index.php?rutas=$1 [QSA,L]
